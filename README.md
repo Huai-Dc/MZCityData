@@ -27,3 +27,10 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## 多环境
+- 开发环境
+- 测试环境
+- 预发环境
+- 生产环境

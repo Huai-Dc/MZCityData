@@ -1,0 +1,478 @@
+{
+  "id": "1893838",
+  "name": "cityData",
+  "font_family": "Ionicons",
+  "css_prefix_text": "ivu-icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5483266",
+      "name": "亲属",
+      "font_class": "relatives",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "5493659",
+      "name": "利率",
+      "font_class": "interest-rate",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "5521073",
+      "name": "热点",
+      "font_class": "hot-point",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "5598221",
+      "name": "进出口",
+      "font_class": "import-export",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "6041486",
+      "name": "企业分析",
+      "font_class": "company-analyze",
+      "unicode": "e721",
+      "unicode_decimal": 59169
+    },
+    {
+      "icon_id": "6057455",
+      "name": "超市",
+      "font_class": "store",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "7257612",
+      "name": "游戏",
+      "font_class": "game",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "7606033",
+      "name": "文化",
+      "font_class": "culture",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7728838",
+      "name": "超市",
+      "font_class": "supermarket",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "7875845",
+      "name": "热点",
+      "font_class": "hot-point2",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "7949621",
+      "name": "消费",
+      "font_class": "consume",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "8281637",
+      "name": "户型",
+      "font_class": "house-type",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8799438",
+      "name": "企业列表",
+      "font_class": "company-list",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "8834910",
+      "name": "景点",
+      "font_class": "scenic-spot",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "9034604",
+      "name": "词云",
+      "font_class": "word-cloud",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "9221646",
+      "name": "力导图",
+      "font_class": "force",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "9609465",
+      "name": "农业",
+      "font_class": "farm",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10012445",
+      "name": "学校",
+      "font_class": "school",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "10383662",
+      "name": "三维柱图",
+      "font_class": "sanweizhutu",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "10572715",
+      "name": "薪酬统计",
+      "font_class": "payment-analyze",
+      "unicode": "e914",
+      "unicode_decimal": 59668
+    },
+    {
+      "icon_id": "10612176",
+      "name": "电影",
+      "font_class": "movie",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "11263932",
+      "name": "环境",
+      "font_class": "environment",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "11553260",
+      "name": "民宿-01",
+      "font_class": "homestay",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "12029596",
+      "name": "产业园",
+      "font_class": "industrial-park",
+      "unicode": "e7ca",
+      "unicode_decimal": 59338
+    },
+    {
+      "icon_id": "12096024",
+      "name": "百货",
+      "font_class": "department-store",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "12456584",
+      "name": "农业",
+      "font_class": "farm2",
+      "unicode": "ea1e",
+      "unicode_decimal": 59934
+    },
+    {
+      "icon_id": "13055718",
+      "name": "历史记录",
+      "font_class": "history-list",
+      "unicode": "e77d",
+      "unicode_decimal": 59261
+    },
+    {
+      "icon_id": "13314063",
+      "name": "分屏",
+      "font_class": "split-screen",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "13410551",
+      "name": "人流量",
+      "font_class": "human-traffic",
+      "unicode": "e9e3",
+      "unicode_decimal": 59875
+    },
+    {
+      "icon_id": "15016474",
+      "name": "热点",
+      "font_class": "hot-point3",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "15112686",
+      "name": "债券",
+      "font_class": "bond",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "15322935",
+      "name": "三维",
+      "font_class": "3d-map",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "39440",
+      "name": "交通",
+      "font_class": "traffic",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "143728",
+      "name": "游戏",
+      "font_class": "game2",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "391465",
+      "name": "电影",
+      "font_class": "movie2",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "975021",
+      "name": "收入",
+      "font_class": "income",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1296892",
+      "name": "热点",
+      "font_class": "hot-point-tips",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1990454",
+      "name": "对比",
+      "font_class": "contrast",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "2080757",
+      "name": "亲属",
+      "font_class": "relationship",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "2081344",
+      "name": "票房",
+      "font_class": "box-office",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2172060",
+      "name": "利率",
+      "font_class": "interest-rate2",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3066426",
+      "name": "土地",
+      "font_class": "land-circle",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "3348951",
+      "name": "热点",
+      "font_class": "idea",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3699901",
+      "name": "核心技术",
+      "font_class": "technology",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "4015782",
+      "name": "土地",
+      "font_class": "land",
+      "unicode": "e7dc",
+      "unicode_decimal": 59356
+    },
+    {
+      "icon_id": "4630872",
+      "name": "历史记录",
+      "font_class": "history",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4932533",
+      "name": "楼盘",
+      "font_class": "houses",
+      "unicode": "ea28",
+      "unicode_decimal": 59944
+    },
+    {
+      "icon_id": "5330632",
+      "name": "股票",
+      "font_class": "stock",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "77837",
+      "name": "拖动",
+      "font_class": "map-drag",
+      "unicode": "e7ae",
+      "unicode_decimal": 59310
+    },
+    {
+      "icon_id": "551255",
+      "name": "产品",
+      "font_class": "product",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "845846",
+      "name": "投资",
+      "font_class": "invest",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "2959092",
+      "name": "统计分析",
+      "font_class": "statistic-analysis",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "3094656",
+      "name": "画矩形",
+      "font_class": "draw-rectangle",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "3094658",
+      "name": "画多边形",
+      "font_class": "draw-polygon",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "4910648",
+      "name": "作品著作",
+      "font_class": "books",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "5838486",
+      "name": "画点",
+      "font_class": "draw-point",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6129213",
+      "name": "171会员、皇冠、冠军-线性",
+      "font_class": "crown",
+      "unicode": "e7a9",
+      "unicode_decimal": 59305
+    },
+    {
+      "icon_id": "6646329",
+      "name": "画圆",
+      "font_class": "draw-circle",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "7171145",
+      "name": "粮食动态决策分析系统",
+      "font_class": "analyse",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "7488987",
+      "name": "画点",
+      "font_class": "map-marker",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "7711999",
+      "name": "热力图",
+      "font_class": "heat-map",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "8922373",
+      "name": "工具",
+      "font_class": "tools",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9851593",
+      "name": "城市管理",
+      "font_class": "city-manage",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11468954",
+      "name": "画线",
+      "font_class": "draw-line",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "12476898",
+      "name": "地图",
+      "font_class": "map",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "12586985",
+      "name": "画线",
+      "font_class": "draw-line2",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "12771509",
+      "name": "指数",
+      "font_class": "index",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}
