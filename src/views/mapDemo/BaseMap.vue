@@ -1,5 +1,6 @@
 <template>
     <div id="mapContainer" class="map">
+        <!-- 绘制工具 -->
         <MouseToolDraw
                 v-if="amap"
                 class="map-mouseTools"
@@ -51,7 +52,10 @@
                 let AMap = this.AMap = window.AMap
 
                 this.amap = new AMap.Map('mapContainer', baseMapConfig)
-
+                let scale = new AMap.Scale({
+                    visible: true
+                })
+                this.amap.addControl(scale);
             },
             test(drawType) {
                 console.log("测试方法" + drawType)

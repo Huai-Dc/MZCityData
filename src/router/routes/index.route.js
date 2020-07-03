@@ -4,7 +4,8 @@ export default {
     path: '/index',
     component: Layout,
     meta:{
-        title: "蒙正指数"
+        title: "蒙正指数",
+        icon: 'index'
     },
     children: [
         {
@@ -13,6 +14,7 @@ export default {
             component: () => import("@/views/mzIndex/MZIndex.vue"),
             meta: {
                 title: '蒙正指数',
+                icon: 'index'
             }
         },
         {
@@ -20,7 +22,8 @@ export default {
             name: 'HeatMapIndex',
             component: () => import("@/views/mzIndex/HeatMapIndex.vue"),
             meta: {
-                title: '指标热力图'
+                title: '指标热力图',
+                icon: 'heat-map'
             }
         }
     ]

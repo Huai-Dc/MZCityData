@@ -1,20 +1,25 @@
 import { constantRouterMap } from '../../router/index'
 
 const SET_ROUTERS = 'SET_ROUTERS'
-console.log(constantRouterMap)
+const SET_ACTIVE_ROUTER = ''
+
 const navigator = {
     state: {
         routers: constantRouterMap,
-        addRouters: []
+        addRouters: [],
+        activeRouter: ''
     },
     mutations: {
         SET_ROUTERS: (state, routers) => {
             state.addRouters = routers;
             state.routers = constantRouterMap.concat(routers);
+        },
+        SET_ACTIVE_ROUTER: (state, activeRouter) => {
+            state.activeRouter = activeRouter;
         }
     },
     actions: {
-        GenerateRoutes({ commit }) {
+        generateRoutes({ commit }) {
             return new Promise( resolve => {
                 commit('SET_ROUTERS',constantRouterMap);
                 resolve()

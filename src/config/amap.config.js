@@ -6,7 +6,7 @@
 const baseMapConfig = {
     zoom: 16,
     // mapStyle: 'amap://styles/grey',
-    center: [107.4976, 30.1697]
+    center: [107.4976, 30.1697],
 }
 
 const base3DMapConfig = {

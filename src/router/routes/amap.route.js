@@ -4,7 +4,8 @@ export default {
     path: '/amap',
     component: Layout,
     meta:{
-        title: "高德地图测试"
+        title: "高德地图测试",
+        icon: 'map',
     },
     children: [
         {
@@ -12,6 +13,7 @@ export default {
             name: 'BaseMap',
             component: () => import("@/views/mapDemo/BaseMap.vue"),
             meta: {
+                icon: 'map',
                 title: '基础地图',
             }
         }

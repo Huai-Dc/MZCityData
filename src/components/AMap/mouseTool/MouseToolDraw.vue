@@ -77,7 +77,7 @@
                         type: 'drag'
                     },
                     "marker": {
-                        icon: "draw-point",
+                        icon: "map-marker",
                         title: "画点",
                         type: 'marker'
                     },
@@ -185,7 +185,7 @@
                 i {
                     font-size: 24px;
                     font-weight: bolder;
-                    color: #0077aa;
+                    color: #2d8cf0;
                 }
             }
 
@@ -194,7 +194,7 @@
             }
 
             .map-mouseTool-btn-active {
-                background-color: #0077aa;
+                background-color: #2d8cf0;
 
                 i {
                     color: #ffffff;
