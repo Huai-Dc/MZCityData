@@ -3,7 +3,11 @@
         :class="[prefixCls]"
         v-clickoutside="onClickOutside"
     >
-        <div ref="reference" @click="handleClick"><slot></slot></div>
+        <div ref="reference" @click="handleClick" :class="[`${prefixCls}-rel`]">
+            <slot>
+                <div>{{pickerCity || defaultWord}}<Icon type="ios-arrow-down" /></div>
+            </slot>
+        </div>
         <transition name="transition-drop">
             <Drop
                 v-show="currentVisible"
@@ -53,8 +57,10 @@
         },
         data(){
             return{
+                defaultWord: '请选择',
                 prefixCls: prefixCls,
-                currentVisible: this.visible
+                currentVisible: this.visible,
+                pickerCity: null
             }
         },
         watch:{
@@ -78,6 +84,8 @@
                 this.currentVisible = false;
             },
             onAfterClick(city){
+                this.pickerCity = city.name;
+                this.handleClose();
                 this.$emit("on-change", city)
             }
         }

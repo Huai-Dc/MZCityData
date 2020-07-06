@@ -20,7 +20,7 @@ export default {
         {
             path: 'userManagement',
             name: 'UserManagement',
-            component: () => import("@/views/chartDemo/BarChart.vue"),
+            component: () => import("@/views/setting/UserManagement.vue"),
             meta: {
                 title: '用户管理',
             }
@@ -28,7 +28,7 @@ export default {
         {
             path: 'deptManagement',
             name: 'DeptManagement',
-            component: () => import("@/views/chartDemo/BarChart.vue"),
+            component: () => import("@/views/setting/DepartmentPostManagement.vue"),
             meta: {
                 title: '部门岗位管理',
             }

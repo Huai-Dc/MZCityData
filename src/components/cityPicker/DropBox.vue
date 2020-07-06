@@ -72,10 +72,10 @@
         },
         methods: {
             update(){
-                console.log("更新")
+                // console.log("更新")
             },
             destroy(){
-                console.log("销毁")
+                // console.log("销毁")
             },
             labelCls(item) {
                 return [

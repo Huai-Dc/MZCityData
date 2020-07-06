@@ -1,5 +1,5 @@
 <template>
-    <div class="layout-sider-content">
+    <div :class="[`${prefixCls}-content`]">
         <div class="logo">LOGO</div>
         <ScrollBar class="sider-menu-scroll">
             <Menu theme="dark" width="auto" :class="menuItemClasses" :active-name="activeMenu" @on-select="changeMenu">
@@ -8,14 +8,18 @@
                 <router-link v-if="isSingleItem(item)" :to="item.path + '/' + item.children[0].path">
                     <MenuItem :name="item.children[0].meta.title" :index="menuIndex+''" :key="menuIndex">
                         <Icon v-if="item.children[0].meta && item.children[0].meta.icon"
-                              :type="item.children[0].meta.icon"/>
+                              :type="item.children[0].meta.icon"
+                              :class="[`${prefixCls}-icon`]"
+                        />
                         <span>{{ item.children[0].meta.title }}</span>
                     </MenuItem>
                 </router-link>
                 <!-- 有子菜单 -->
                 <Submenu v-else :name="menuIndex+''">
                     <div slot="title">
-                        <Icon :type="item.meta.icon"/>
+                        <Icon :type="item.meta.icon"
+                              :class="[`${prefixCls}-icon`]"
+                        />
                         <span>{{ item.meta.title }}</span>
                     </div>
                     <div v-for="(child, number) in item.children" v-if="!child.hidden">
@@ -60,6 +64,7 @@
     import {getStorage, setStorage} from "../../../utils/storageData";
     import ScrollBar from '../../../components/ScrollBar/Index'
 
+    const prefixCls = 'layout-sider'
     export default {
         name: "MSider",
         components: {
@@ -69,6 +74,7 @@
             return {
                 routes: null,
                 activeMenu: '',
+                prefixCls: prefixCls
             }
         },
         computed: {
@@ -126,7 +132,9 @@
 <style scoped lang="scss">
     .layout-sider-content {
         height: 100%;
-
+        .layout-sider-icon{
+            margin-right: 6px;
+        }
         .logo {
             height: 64px;
             box-sizing: border-box;
@@ -168,7 +176,7 @@
             span {
                 display: inline-block;
                 overflow: hidden;
-                width: 69px;
+                width: 135px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 vertical-align: bottom;

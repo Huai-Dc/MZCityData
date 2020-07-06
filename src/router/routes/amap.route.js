@@ -16,6 +16,15 @@ export default {
                 icon: 'map',
                 title: '基础地图',
             }
+        },
+        {
+            path: 'districtSearch',
+            name: 'DistrictSearch',
+            component: () => import("@/views/mapDemo/DistrictSearch.vue"),
+            meta: {
+                icon: 'map',
+                title: '行政区划边界',
+            }
         }
     ]
 }

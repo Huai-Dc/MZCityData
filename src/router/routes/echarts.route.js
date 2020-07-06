@@ -16,6 +16,24 @@ export default {
                 icon: 'echarts',
                 title: '柱图',
             }
-        }
+        },
+        {
+            path: 'pieChart',
+            name: 'PieChart',
+            component: () => import("@/views/chartDemo/PieChart.vue"),
+            meta: {
+                icon: 'echarts',
+                title: '饼图',
+            }
+        },
+        {
+            path: 'lineChart',
+            name: 'LineChart',
+            component: () => import("@/views/chartDemo/LineChart.vue"),
+            meta: {
+                icon: 'echarts',
+                title: '折线图',
+            }
+        },
     ]
 }
