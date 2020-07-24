@@ -1,26 +1,29 @@
 <template>
     <div id="mapContainer" class="map">
-        <CityPicker
-                @on-change="change"
-        >
-        </CityPicker>
+        <MouseToolDraw
+                v-if="amap"
+                class="map-mouseTools"
+                :drawTypes="['drag', 'marker', 'polyline','polygon', 'rectangle', 'circle']"
+                :map="amap"
+        ></MouseToolDraw>
     </div>
 </template>
 
 <script>
-    import {baseMapConfig} from '../../config/amap.config'
-    import CityPicker from '@/components/cityPicker/Index.vue'
-    import {drawBounds} from "../../utils/aMap";
-
+    import {base3DMapConfig} from '../../config/amap.config'
+    import MouseToolDraw from "../../components/AMap/mouseTool/MouseToolDraw"
     export default {
-        name: "DistrictSearch",
+        name: "ThreeDMap",
         components: {
-            CityPicker
+            MouseToolDraw
         },
         data() {
             return {
                 amap: null
             }
+        },
+        created() {
+
         },
         mounted() {
             this.$nextTick(() => {
@@ -39,18 +42,11 @@
                 let AMapUI = this.AMapUI = window.AMapUI
                 let AMap = this.AMap = window.AMap
 
-                this.amap = new AMap.Map('mapContainer', baseMapConfig)
+                this.amap = new AMap.Map('mapContainer', base3DMapConfig)
                 let scale = new AMap.Scale({
                     visible: true
                 })
                 this.amap.addControl(scale);
-            },
-            change(city){
-                drawBounds(this.amap, {
-                    nameOrAdcode: city.name || city.code
-                }).then(res =>{
-                    console.log(res);
-                })
             }
         }
     }
@@ -61,22 +57,11 @@
         width: 100%;
         height: 100%;
         position: relative;
-        ::v-deep.city-picker{
+
+        .map-mouseTools {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 100;
-            .city-picker-rel{
-                display: inline-block;
-                >div{
-                    background-color: white;
-                    height: 30px;
-                    line-height: 30px;
-                    padding: 0 8px;
-                    border-radius: 4px;
-                    border: 1px solid #dcdee2;
-                }
-            }
+            top: 10px;
+            right: 10px;
         }
     }
 </style>

@@ -25,6 +25,15 @@ export default {
                 icon: 'map',
                 title: '行政区划边界',
             }
+        },
+        {
+            path: 'threeDMap',
+            name: 'ThreeDMap',
+            component: () => import("@/views/mapDemo/ThreeDMap.vue"),
+            meta: {
+                icon: 'map',
+                title: '三维地图',
+            }
         }
     ]
 }

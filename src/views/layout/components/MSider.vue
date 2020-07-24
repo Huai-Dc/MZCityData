@@ -88,7 +88,6 @@
                 ]
             },
             filterRouters() {
-                console.log(2)
                 if (this.routers && this.routers.length > 0) {
                     return this.routers.filter(item => {
                         if(this.activeMenu === '' && !item.hidden){
@@ -149,8 +148,13 @@
             height: calc(100% - 64px);
         }
 
-        .ivu-menu-dark {
+        ::v-deep.ivu-menu-dark {
             background-color: #191a23;
+            .ivu-menu-child-item-active{
+                .ivu-menu-submenu-title{
+                    font-weight: bold;
+                }
+            }
         }
 
         .ivu-menu-dark.ivu-menu-vertical {
