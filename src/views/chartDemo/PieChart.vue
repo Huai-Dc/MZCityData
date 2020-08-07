@@ -11,7 +11,6 @@
 
 <script>
     import Chart from '@/components/Echarts/Chart.vue'
-    import 'echarts/lib/chart/pie'
 
     export default {
         name: "PieChart",

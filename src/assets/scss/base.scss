@@ -29,6 +29,26 @@
     z-index: 3;
     display: block;
   }
+  .fixed-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: calc(100% - 210px);
+    -webkit-transition: width 0.28s;
+    transition: width 0.2s;
+  }
+  .fixed-header + .ivu-layout-content{
+    padding-top: 64px;
+  }
+  &.hide-sider{
+    .fixed-header{
+      width: calc(100% - 78px);
+    }
+  }
+  .ivu-layout-content{
+
+  }
 }
 .i-layout-sider-dark {
   background: #191a23;

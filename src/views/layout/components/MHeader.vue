@@ -7,6 +7,9 @@
         <div class="header-left"></div>
         <!-- 标题栏右侧 -->
         <div class="header-right">
+            <div class="btn-header">
+                <img height="64" src="../../../assets/images/weather/snow1_night.png" alt="">
+            </div>
             <!-- 设置按钮 -->
             <div class="btn-setting btn-header">
                 <Tooltip content="设置" placement="bottom">

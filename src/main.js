@@ -6,7 +6,11 @@ import store from './store'
 // 公共资源组件引入
 import './common.components.register'
 
+import http from './net/http'
+
 Vue.config.productionTip = false
+
+Vue.prototype.$http = http
 
 new Vue({
   router,

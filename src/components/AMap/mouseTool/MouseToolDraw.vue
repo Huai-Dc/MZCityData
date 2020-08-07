@@ -5,6 +5,7 @@
                 :title="item.title"
                 @click="toggle(item)"
                 :class="btnCls(item)"
+
             >
                 <Icon :type="item.icon"></Icon>
             </li>
@@ -44,6 +45,10 @@
                     return partOfArray(ary, typeActionList);
                 },
                 default: () => []
+            },
+            resetMode: {
+                type: Boolean,
+                default: true,
             },
             markerOptions: {
                 type: Object,
@@ -120,6 +125,9 @@
                         this.mouseTools = new AMap.MouseTool(this.map);
                         this.mouseTools.on("draw", (e) => {
                             this.$emit('on-after-draw', e)
+                            if(this.resetMode) {
+                                this.reset()
+                            }
                         })
                     });
                 }
@@ -145,6 +153,10 @@
                 this.currentDrawType = drawType
                 this.$emit('on-change', drawType);
             },
+            reset(){
+                this.currentDrawType = 'drag'
+                this.mouseTools.close(false);
+            },
             btnCls(item) {
                 return [
                     `${prefixCls}-btn`,
@@ -161,7 +173,7 @@
 
 <style scoped lang="scss">
     .map-draw-tools {
-        z-index: 20;
+        z-index: 2;
         position: absolute;
 
         > ul {

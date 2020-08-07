@@ -115,7 +115,9 @@
              * @returns {boolean}
              */
             isSingleItem(item) {
-                if (item.path === "") return true
+                console.log(item)
+                if (item.path === "" || item.path === '/') return true
+
                 return item.children.length === 1
             },
             getActiveMenu(){

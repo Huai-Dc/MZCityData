@@ -4,7 +4,23 @@
 </template>
 
 <script>
+    /**
+     * 参数说明
+     * @props options echarts 参数
+     * @props theme 主题
+     * @props initOptions 初始化参数
+     * @props group group 图形元素
+     * @props autoResize 自适应宽高
+     * @props watchShallow
+     * @props manualUpdate
+     */
     import echarts from 'echarts/lib/echarts'
+    import 'echarts/lib/chart/pie'
+    import 'echarts/lib/chart/bar'
+    import 'echarts/lib/chart/line'
+    import 'echarts/lib/component/legend'
+    import 'echarts/lib/component/tooltip'
+
     import debounce from 'lodash/debounce'
     import {addListener, removeListener} from 'resize-detector'
 
@@ -57,7 +73,10 @@
             theme: [String, Object],
             initOptions: Object,
             group: [],
-            autoResize: Boolean,
+            autoResize: {
+                type: Boolean,
+                default: true
+            }, // 自动适应宽度
             watchShallow: Boolean,
             manualUpdate: Boolean,
         },
@@ -101,7 +120,7 @@
             this.destroy()
         },
         destroyed () {
-            if (this.autoresize) {
+            if (this.autoResize) {
                 removeListener(this.$el, this.__resizeHandler)
             }
             this.dispose()

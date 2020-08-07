@@ -11,7 +11,7 @@
 
 <script>
     import Chart from '@/components/Echarts/Chart.vue'
-    import 'echarts/lib/chart/line'
+
     export default {
         name: "LineChart",
         components: {

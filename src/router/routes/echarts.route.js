@@ -35,5 +35,14 @@ export default {
                 title: '折线图',
             }
         },
+        {
+            path: 'timelinePieChart',
+            name: 'TimelinePieChart',
+            component: () => import("@/views/chartDemo/TimelinePieChart.vue"),
+            meta: {
+                title: "时间轴+饼图"
+            }
+        }
+
     ]
 }

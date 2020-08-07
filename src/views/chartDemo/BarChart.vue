@@ -12,7 +12,6 @@
 
 <script>
     import Chart from '@/components/Echarts/Chart.vue'
-    import 'echarts/lib/chart/bar';
 
     export default {
         name: "BarChart",

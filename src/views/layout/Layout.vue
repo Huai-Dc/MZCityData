@@ -1,6 +1,6 @@
 <template>
-    <Layout>
-        <Sider class="i-layout-sider-dark" width="250" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
+    <Layout :class="layoutClass">
+        <Sider class="i-layout-sider-dark" width="210" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
             <MSider></MSider>
         </Sider>
         <Layout>
@@ -26,7 +26,13 @@
         computed: {
             ...mapGetters([
                 'isCollapsed'
-            ])
+            ]),
+            layoutClass(){
+                return {
+                    'hide-sider': this.isCollapsed,
+                    'show-sider': !this.isCollapsed,
+                }
+            }
         }
     }
 </script>
