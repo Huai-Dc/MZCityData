@@ -903,7 +903,7 @@ export default {
             parentCode: "350000"
         },
         350200: {
-            letter: "S",
+            letter: "X",
             name: "厦门市",
             code: "350200",
             parentCode: "350000"

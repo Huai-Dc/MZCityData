@@ -22,7 +22,7 @@
      * on-close
      */
 
-    import {oneOf, partOfArray} from "../../../utils/assist";
+    import {oneOf, partOfArray} from "@/utils/assist";
 
     let prefixCls = "map-mouseTool"
     const typeActionList = ["drag", "marker", "polyline", "polygon", "rectangle", "circle"]
