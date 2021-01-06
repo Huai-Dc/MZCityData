@@ -12,7 +12,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
     "@jiaminghi/data-view": "^2.9.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "echarts": "^4.8.0",
     "file-saver": "^2.0.2",
