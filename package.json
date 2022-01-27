@@ -23,7 +23,7 @@
     "normalize.css": "^8.0.1",
     "qs": "^6.9.4",
     "resize-detector": "^0.2.2",
-    "three": "^0.117.1",
+    "three": "^0.137.0",
     "view-design": "^4.2.0",
     "vue": "^2.6.11",
     "vue-lazyload": "^1.3.3",
