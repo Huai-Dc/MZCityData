@@ -21,7 +21,7 @@
     "lodash": "^4.17.19",
     "mockjs": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "resize-detector": "^0.2.2",
     "three": "^0.117.1",
     "view-design": "^4.2.0",
